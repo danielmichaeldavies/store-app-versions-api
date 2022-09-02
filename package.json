@@ -1,15 +1,16 @@
 {
   "name": "appstoreapi",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dan Davies <me@danmdavies.com>",
   "license": "ISC",
+  "type": "module",
+  "main": "app.js",
   "dependencies": {
+    "dotenv": "^16.0.2",
     "express": "^4.18.1"
   },
   "devDependencies": {
