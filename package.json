@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "DEBUG=express:* node --experimental-fetch app.js",
+    "dev:debug": "DEBUG=express:* node inspect app.js --experimental-fetch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dan Davies <me@danmdavies.com>",
@@ -10,6 +12,7 @@
   "type": "module",
   "main": "app.js",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.2",
     "express": "^4.18.1"
   },
